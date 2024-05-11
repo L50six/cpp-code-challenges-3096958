@@ -19,6 +19,15 @@ std::vector<std::string> knight_moves(std::string knight){
     std::vector<std::string> moves;
 
     // Write your code here
+	struct KnightMove {
+			int dx;
+			int dy;
+	}
+
+	vector<KnightMove> KnightMoves = {
+		{1,2},{-1,2},{-1,-2}, {-1,2},
+		{2,1},{-2,1},{-2,-1},{2,-1}
+    };
 
     return moves;
 }
